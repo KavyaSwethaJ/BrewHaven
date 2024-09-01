@@ -80,6 +80,7 @@ section {
     justify-content: space-between;
     padding: 1.5rem 7%;
     border-bottom: var(--border);
+    border-width: thin;
     position: fixed;
     top: 0;
     right: 0;
@@ -264,6 +265,110 @@ section {
     color: #ccc;
     padding: 1rem 0;
     line-height: 1.8;
+}
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+}
+
+.menu .box-container .box {
+    padding: 5rem;
+    text-align: center;
+    border: var(--border);
+    border-width: thin;
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.menu .box-container .box .price {
+    font-size: 2.5rem;
+    padding: .5rem 0;
+    color: #fff;
+}
+
+.menu .box-container .box .price span{
+    font-size: 1.5rem;
+    padding: .5rem 0;
+    text-decoration: line-through;
+}
+
+.menu .box-container .box:hover {
+    background: var(--white);
+}
+
+.menu .box-container .box:hover > *{
+    color: var(--black);
+}
+
+.products .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+}
+
+.products .box-container .box {
+    padding: 2rem;
+    text-align: center;
+    border: var(--border);
+    border-width: thin;
+}
+
+.products .box-container .box .icons a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    border: var(--border);
+    border-width: thin;
+    color: #fff;
+    margin: .3rem;
+}
+
+.products .box-container .box .icons a:hover{
+    color: var(--main-color);
+}
+
+.products .box-container .box .image {
+    padding: 2.5rem 0;
+}
+
+.products .box-container .box .image img{
+    height: 25rem;
+}
+
+.products .box-container .box .content h3 {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.products .box-container .box .content .stars {
+    padding: 1.5rem;
+}
+
+.products .box-container .box .content .stars i {
+    font-size: 1.7rem;
+    color: var(--main-color);
+}
+
+.products .box-container .box .content .price {
+    font-size: 2.5rem;
+    color: #fff;
+}
+
+.products .box-container .box .content .price span{
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    font-weight: lighter;
 }
 
 @media (max-width: 991px) {
