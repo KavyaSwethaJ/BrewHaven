@@ -461,6 +461,50 @@ section {
     border: none    ;
 }
 
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+.footer .share a{
+    height: 5rem;
+    width:5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border: var(--border);
+    margin: .3rem;
+    border-radius: 50%;
+    border-width: thin;
+}
+
+.footer .share a:hover{
+    background-color: var(--main-color);
+}
+
+.footer .links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+
+.footer .links a {
+    border: var(--border);
+    border-width: thin;
+    font-size: 2rem;
+    padding: .7rem 2rem;
+    color: #fff;
+}
+
+.footer .links a:hover {
+    background-color: var(--main-color);
+}
+
 @media (max-width: 991px) {
     html {
         font-size:55%;
